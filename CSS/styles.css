@@ -1,0 +1,161 @@
+
+
+/*Global
+---------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    color:#333;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    width: 335px;
+}
+a {
+    color:#1f5c75;
+}
+a:hover {
+    text-decoration: none;
+}
+.content-wrapper{
+    max-width:850px;
+    width: 85%;
+    margin:0 auto; 
+    /* top/bottom=0 left/right=auto */
+    padding: 60px 0;
+    
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+.item-detail h3 + p {
+    font-style: italic;
+}
+
+.item-detail  h3 ~ p {
+    margin: 0;
+}
+
+.divider > section{
+    overflow: hidden;
+    border-bottom: 1px dashed #333; 
+    /* when i have more projects or work experience, this will be the divider */
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type{
+    border: none;
+    /* so the last section in class divider will not show the divider at the bottom */
+}
+
+/*Profile
+---------------------------------------------*/
+header {
+    background: #666a86;
+    color: #f7fff7;
+    text-align: center;
+}
+
+header h2{
+    font-weight: normal;
+}
+/*Projects
+---------------------------------------------*/
+.projects {
+    background: #95b8d1;
+}
+.projects a{
+    background: #366d94;
+    color: #e6f6fc;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 10px;
+}/* style the link in the project  */
+
+.projects a:hover{
+    background: rgba(54, 109, 148, 80%);
+}
+
+.projects p{
+    margin-top: 8px;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 10px;
+    margin-bottom:5px;
+}
+
+.project-item h3 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+/*Work Experience
+---------------------------------------------*/
+.work-experience{
+    background: #e8ddb5;
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
+/*Education
+---------------------------------------------*/
+.education {
+    background-image: url(../images/ubc-background.jpg);
+    background-size: cover;
+    color: #f7fff7;
+    background-position: top right; 
+}
+
+/*Contact Info
+---------------------------------------------*/
+footer {
+    background: #edafb8;
+    /* color: #f7fff7 */
+    text-align: center;
+}
+
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    /* clear the format */
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list a {
+    padding: 15px;
+    display:inline-block;
+    /* to let it be able to adjust its horizontal and vetical size */
+}
